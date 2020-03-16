@@ -1,0 +1,10 @@
+<div style="display: flex; flex-direction: column;">
+    <div style="height: 3rem;"></div>
+    <div style="align-self: center; font-size: 1.6rem;">Who is logging in?</div>
+    <div style="display: flex; align-self: center;">
+        <div class="avatar" title="{{user.name}}" routerLink="/exercises/{{user.initial}}" *ngFor="let user of users">
+            {{user.initial}}
+        </div>
+    </div>
+    <div style="height: 3rem;"></div>
+</div>

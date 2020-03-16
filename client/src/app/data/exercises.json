@@ -1,0 +1,318 @@
+[
+    {
+        "key": "mar",
+        "name": "Marching",
+        "description": "March in place",
+        "schedule": [
+            "mo",
+            "tu",
+            "we",
+            "th",
+            "fr",
+            "sa",
+            "su"
+        ],
+        "sets": [
+            {
+                "seconds": 60
+            }
+        ],
+        "reps": {
+            "count": 1
+        }
+    },
+    {
+        "key": "gra",
+        "name": "Grapevine",
+        "description": "Perform a criss-cross with your legs by stepping side-to-side.",
+        "schedule": [
+            "mo",
+            "tu",
+            "we",
+            "th",
+            "fr",
+            "sa",
+            "su"
+        ],
+        "sets": [
+            {
+                "seconds": 60
+            }
+        ],
+        "reps": {
+            "count": 1
+        }
+    },
+    {
+        "key": "pro",
+        "name": "Progress plank",
+        "description": "Be a plank",
+        "schedule": [
+            "tu",
+            "th",
+            "sa"
+        ],
+        "sets": [
+            {
+                "seconds": 20
+            },
+            {
+                "seconds": 20
+            },
+            {
+                "seconds": 20
+            }
+        ],
+        "reps": {
+            "count": 1
+        }
+    },
+    {
+        "key": "squ",
+        "name": "Squats!",
+        "description": "3X - 20 nice slow squats",
+        "schedule": [
+            "tu",
+            "th",
+            "sa"
+        ],
+        "sets": [
+            {},
+            {},
+            {}
+        ],
+        "reps": {
+            "count": 20
+        }
+    },
+    {
+        "key": "slu",
+        "name": "Static lunges",
+        "description": "2X - 10 per side",
+        "schedule": [
+            "fr"
+        ],
+        "sets": [
+            {},
+            {}
+        ],
+        "reps": {
+            "count": 10
+        }
+    },
+    {
+        "key": "wlu",
+        "name": "Walking lunges",
+        "description": "2X - 10 per side",
+        "schedule": [
+            "tu",
+            "th",
+            "sa"
+        ],
+        "sets": [
+            {},
+            {}
+        ],
+        "reps": {
+            "count": 10
+        }
+    },
+    {
+        "key": "bha",
+        "name": "Banded hip abductions",
+        "description": "2X - 10 per side. Hold for 3 seconds.",
+        "schedule": [
+            "tu",
+            "th",
+            "sa"
+        ],
+        "sets": [
+            {
+                "comment": "Right leg forward"
+            },
+            {
+                "comment": "Right leg back"
+            },
+            {
+                "comment": "Left leg forward"
+            },
+            {
+                "comment": "Left leg back"
+            }
+        ],
+        "reps": {
+            "count": 10
+        }
+    },
+    {
+        "key": "bhe",
+        "name": "Banded hip extensions",
+        "description": "2X - 10 per side. Hold for 3 seconds.",
+        "schedule": [
+            "tu",
+            "th",
+            "sa"
+        ],
+        "sets": [
+            {
+                "comment": "Right leg out"
+            },
+            {
+                "comment": "Right leg in"
+            },
+            {
+                "comment": "Left leg out"
+            },
+            {
+                "comment": "Left leg in"
+            }
+        ],
+        "reps": {
+            "count": 10,
+            "seconds": 3
+        }
+    },
+    {
+        "key": "bri",
+        "name": "Bridges",
+        "description": "5X - With both legs; 5X - Left leg only.",
+        "schedule": [
+            "tu",
+            "th",
+            "sa"
+        ],
+        "sets": [
+            {
+                "comment": "Both legs"
+            },
+            {
+                "comment": "Left leg only"
+            }
+        ],
+        "reps": {
+            "count": 5,
+            "seconds": 3
+        }
+    },
+    {
+        "key": "one",
+        "name": "One legged plank",
+        "description": "Be a one legged plank",
+        "schedule": [
+            "fr"
+        ],
+        "sets": [
+            {
+                "seconds": 20,
+                "comment": "Left leg"
+            },
+            {
+                "seconds": 20,
+                "comment": "Right leg"
+            }
+        ],
+        "reps": {
+            "count": 1
+        }
+    },
+    {
+        "key": "hfl",
+        "name": "Hip flexor stretch",
+        "description": "2X - Hold for 30 seconds",
+        "schedule": [
+            "mo",
+            "tu",
+            "we",
+            "th",
+            "fr",
+            "sa",
+            "su"
+        ],
+        "sets": [
+            {
+                "seconds": 30
+            },
+            {
+                "seconds": 30
+            }
+        ],
+        "reps": {
+            "count": 1
+        }
+    },
+    {
+        "key": "but",
+        "name": "Butterfly stretch",
+        "description": "2X - Press down on knees for 30 seconds",
+        "schedule": [
+            "mo",
+            "tu",
+            "we",
+            "th",
+            "fr",
+            "sa",
+            "su"
+        ],
+        "sets": [
+            {
+                "seconds": 30
+            },
+            {
+                "seconds": 30
+            }
+        ],
+        "reps": {
+            "count": 1
+        }
+    },
+    {
+        "key": "hro",
+        "name": "Hip rotation stretch",
+        "description": "2X - Hold for 30 seconds",
+        "schedule": [
+            "mo",
+            "tu",
+            "we",
+            "th",
+            "fr",
+            "sa",
+            "su"
+        ],
+        "sets": [
+            {
+                "seconds": 30
+            },
+            {
+                "seconds": 30
+            }
+        ],
+        "reps": {
+            "count": 1
+        }
+    },
+    {
+        "key": "hir",
+        "name": "Hip internal rotation stretch",
+        "description": "2X - Hold for 30 seconds",
+        "schedule": [
+            "mo",
+            "tu",
+            "we",
+            "th",
+            "fr",
+            "sa",
+            "su"
+        ],
+        "sets": [
+            {
+                "seconds": 30
+            },
+            {
+                "seconds": 30
+            }
+        ],
+        "reps": {
+            "count": 1
+        }
+    }
+]

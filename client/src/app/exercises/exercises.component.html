@@ -1,0 +1,39 @@
+<div style="margin: 2rem 1rem; display: flex;flex-direction: column;">
+    <div style="display: flex; flex-direction: row;">
+        <span style="font-size: 1.6rem;">Today's stretches are</span>
+        <span class="spacer"></span>
+        <mat-select [(value)]="selectedDay" style="width: 100px">
+            <mat-option *ngFor="let d of dayList" [value]="d.key" (click)="getExercises(d.key)">{{d.display}}
+            </mat-option>
+        </mat-select>
+    </div>
+    <div *ngFor="let exercise of exercises">
+        <hr>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex;flex-direction: column;">
+                <span style="font-size: 1.2rem;">{{exercise.name}}</span>
+                <span>{{exercise.description}}</span>
+            </div>
+            <div class="spacer"></div>
+
+            <div style="display: flex; flex-direction: column">
+                <div *ngFor="let eSet of exercise.sets; let setIndex = index;"
+                    style="display: flex; flex-direction: row; align-items: center;">
+
+                    <app-timer *ngIf="!eSet.seconds" [count]="false" duration="{{exercise.reps.count}}"
+                        exercise="{{exercise.name + ', , Set ' + (setIndex + 1) + ', ' + (eSet.comment ? ', , ' + eSet.comment : '')}}">
+                    </app-timer>
+                    <mat-checkbox #cb *ngIf="!eSet.seconds" (click)="setCompleted(!cb.checked, eSet, true)">
+                    </mat-checkbox>
+
+                    <app-timer *ngIf="eSet.seconds" [count]="true" [disabled]="eSet.stats.completionDate"
+                        duration="{{eSet.seconds}}"
+                        exercise="{{exercise.name + ', , Set ' + (setIndex + 1) + ', ' + (eSet.comment ? ', , ' + eSet.comment : '')}}"
+                        (completed)="setCompleted(true, eSet)">
+                    </app-timer>
+                    <mat-checkbox *ngIf="eSet.seconds" disabled checked="{{eSet.stats.completionDate}}"></mat-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div style="display: flex; align-items: center;" *ngIf="duration">
+    <span class="mono">{{formattedRemaining}}</span>
+
+    <mat-icon *ngIf="disabled" style="cursor: default;">replay</mat-icon>
+    <mat-icon *ngIf="!disabled && !counting" style="cursor: pointer;" (click)="start()">play_arrow</mat-icon>
+    <mat-icon *ngIf="!disabled && counting" style="cursor: pointer;" (click)="pause()">pause</mat-icon>
+</div>
